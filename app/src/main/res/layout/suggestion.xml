@@ -20,6 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
+        android:text="生活建议"
         android:textColor="#fff" />
     <!-- 显示洗车建议 -->
     <TextView
@@ -27,6 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
+        android:text="洗车建议"
         android:textColor="#fff" />
     <!-- 显示运动建议 -->
     <TextView
@@ -34,5 +36,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
+        android:text="运动建议"
         android:textColor="#fff" />
 </LinearLayout>

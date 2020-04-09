@@ -50,9 +50,9 @@ public class WeatherActivity extends AppCompatActivity {
         forecastLayout = findViewById(R.id.forecast_layout);
         aqiText = findViewById(R.id.aqi_text);
         pm25Text = findViewById(R.id.pm25_text);
-//        comfortText = findViewById(R.id.comfort_text);
-//        carWashText = findViewById(R.id.car_wash_text);
-//        sportText = findViewById(R.id.sport_text);
+        comfortText = findViewById(R.id.comfort_text);
+        carWashText = findViewById(R.id.car_wash_text);
+        sportText = findViewById(R.id.sport_text);
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         String weatherString = prefs.getString("weather",null);
         if(weatherString != null){
@@ -144,9 +144,9 @@ public class WeatherActivity extends AppCompatActivity {
         String comfort = "舒适度: " + weather.suggestion.comfort.info;
         String carWash = "洗车指数: " + weather.suggestion.carWash.info;
         String sport = "运动建议: "+ weather.suggestion.sport.info;
-//        comfortText.setText(comfort);
-//        carWashText.setText(carWash);
-//        sportText.setText(sport);
+        comfortText.setText(comfort);
+        carWashText.setText(carWash);
+        sportText.setText(sport);
         weatherLayout.setVisibility(View.VISIBLE);  // 将天气信息设置为可见
     }
 }
